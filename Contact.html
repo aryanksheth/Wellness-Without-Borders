@@ -27,7 +27,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#About">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
         </nav>
@@ -35,29 +35,43 @@
     
     <div class="menu-bg" id="menu-bg"></div>
    </body>
+<div class="content">
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us using the form below or through our contact information.</p>
 
+        <!-- Contact form -->
+        <form action="submit_contact_form.php" method="post">
+            
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
 
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Wellness <span
-                class="w3-hide-small">Without</span> Borders</span>
-    </div>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Contact information -->
+        <div class="contact-info">
+            <h3>Visit Us</h3>
+            <p>123 Wellness Street, Cityville, Country</p>
+
+            <h3>Email Us</h3>
+            <p>info@wellnesswithoutborders.com</p>
+
+            <h3>Call Us</h3>
+            <p>+1 (123) 456-7890</p>
+        </div>
+    </section>
 </div>
-<about>
-    <div class="bodyR" id="About">
-<center> <h2> ABOUT US</h2></center>
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-    enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat.</p>
-</about>
-</div>
 
-        
-
+<!-- Your existing scripts and menu-related code -->
+<script src="scripts.js"></script>
+<div class="menu-bg" id="menu-bg"></div>
 </body>
+
 </html>
