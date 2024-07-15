@@ -11,6 +11,14 @@ body {
   line-height: 1.8;
   background-color: #212121; /* Change this to the color you want */
 }
+.bodyR {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  color: #6C7A86;
+  line-height: 1.8;
+  text-align: right;
+  background-color: #212121; /* Change this to the color you want */
+}
 header {
     background-color: #6C7A86;
     color: black;
@@ -27,7 +35,7 @@ header {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('tRjQVVb.jpg');
+  background-image: url('driving-innovative-health-care-solutions-food-pantry-line-936497194.jpg');
   min-height: 100%;
 }
 
