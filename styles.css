@@ -35,11 +35,11 @@ header {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('assets/images/driving-innovative-health-care-solutions-food-pantry-line-936497194.jpg');
+  background-image: url('driving-innovative-health-care-solutions-food-pantry-line-936497194.jpg');
   min-height: 100%;
 }
 .bgimg-2{
-  background-image: url('assets/images/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg');
+  background-image: url('national-cancer-institute-NFvdKIhxYlU-unsplash.jpg');
   min-height: 100%;
 }
 
@@ -90,4 +90,21 @@ footer {
   width: 400px;
   padding: 10px;
   height: 333px;
+}
+footer {
+    background-color: #333;
+    color: #6C7A86;
+    text-align: center;
+    padding: 1em;
+    position: flex;
+}
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-sticky {
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
