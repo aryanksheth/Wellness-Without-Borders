@@ -8,7 +8,7 @@ body, html {
 body {
   font-family: "Lato", sans-serif;
   height: 100%;
-  color: #6C7A86;
+  color: #a1a3a4;
   line-height: 1.8;
   background-color: #212121; /* Change this to the color you want */
 }
@@ -22,7 +22,7 @@ body {
 }
 header {
     background-color: #6C7A86;
-    color: black;
+     color: #cddae0;
     padding: 1em;
 }
 
