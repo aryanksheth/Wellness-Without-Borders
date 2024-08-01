@@ -26,10 +26,18 @@
         <nav class="nav" id="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Learn More</button>
+                    <div class="dropdown-content">
+                        <a href="causes.html">Causes</a>
+                        <a href="effects.html">Effects</a>
+                        <a href="impact.html">Impact</a>
+                        
+                    </div>
+                </div>
+                
                 <li><a href="team.html">Team</a></li>
-                <li><a href="#News">News</a></li>
             </ul>
         </nav>
     </div>
@@ -102,68 +110,48 @@
         </div>
     </div>
     </div>
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-    <div class="bodyR" id="News">
-            <center>
-                <h2>NEWS</h2>
-            </center>
-        <!-- First Photo Grid-->
-         
-        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-            <div class="w3-quarter">
-                <div class="container">
-                
-                <img src="Empty_hand_sanitizer_shelf_in_Cambodia.jpg" alt="By Mx. Granger - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=87111214" style="width:100%"></a>
-                <div class="overlay">
-                <div class="text"><a href="research-on-shortages.html">Research on Shortages</div></a>
-                
+
+
+    <!-- Container (Contact Section) -->
+
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Any Questions?</h3>
+        <p class="w3-center"><em>Reach Out to Us!</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="pexels-maxmishin-11119419.jpg" class="w3-round" style="width:100%" style="height: 100%;">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Minnesota,
+                    US<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:
+                    123-456-7890<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    wellnesswithoutboundaries@gmail.com<br>
                 </div>
-            </div>
-            <p>This article explores the causes, effects, and specific products impacted by medical device shortages.</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="/w3images/steak.jpg" alt="" style="width:100%">
-                <h3>Title</h3>
-                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="/w3images/cherries.jpg" alt="" style="width:100%">
-                <h3>Title</h3>
-                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-                <p>What else?</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="/w3images/wine.jpg" alt="" style="width:100%">
-                <h3>Title</h3>
-                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            </div>
-        </div>
-    
-        <!-- Second Photo Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center">
-            <div class="w3-quarter">
-                <img src="/w3images/popsicle.jpg" alt="" style="width:100%">
-                <h3>Title</h3>
-                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="/w3images/salmon.jpg" alt="" style="width:100%">
-                <h3>Title</h3>
-                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="/w3images/sandwich.jpg" alt="" style="width:100%">
-                <h3>Title</h3>
-                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="/w3images/croissant.jpg" alt="" style="width:100%">
-                <h3>Title</h3>
-                <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                <form action="https://formspree.io/f/mkgwgloz" method="POST">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="Name" name="name" type="text" placeholder="Name"
+                                required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="email" name="name" type="text" placeholder="Email"
+                                required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="messages" name="messages" type="text" placeholder="Message"
+                        required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND
+                    </button>
+                </form>
             </div>
         </div>
-    
+    </div>
+
         <!-- Pagination -->
         <div class="w3-center w3-padding-32">
             <div class="w3-bar">

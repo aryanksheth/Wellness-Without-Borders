@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Without Borders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css" <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Screenshot 2024-07-15 143039.png">
+</head>
+
+<body>
+    <script src="scripts.js"></script>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="menu-bg" id="menu-bg"></div>
+
+    <!-- Container (Contact Section) -->
+
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Any Questions?</h3>
+        <p class="w3-center"><em>Reach Out to Us!</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="pexels-maxmishin-11119419.jpg" class="w3-round" style="width:100%" style="height: 100%;">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Minnesota,
+                    US<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:
+                    123-456-7890<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    wellnessiwthoutboundaries@gmail.com<br>
+                </div>
+                <form action="https://formspree.io/f/mkgwgloz" method="POST">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="Name" name="name" type="text" placeholder="Name"
+                                required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="email" name="name" type="text" placeholder="Email"
+                                required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="messages" name="messages" type="text" placeholder="Message"
+                        required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Your existing scripts -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+    <div class="bodyR" id="News">
+        <center>
+            <h2>NEWS</h2>
+        </center>
+        <!-- First Photo Grid-->
+
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+            <div class="w3-quarter">
+                <div class="container">
+
+                    <img src="Empty_hand_sanitizer_shelf_in_Cambodia.jpg"
+                        alt="By Mx. Granger - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=87111214"
+                        style="width:100%"></a>
+                    <div class="overlay">
+                        <div class="text"><a href="research-on-shortages.html">Research on Shortages</div></a>
+
+                    </div>
+                </div>
+                <p>This article explores the causes, effects, and specific products impacted by medical device
+                    shortages.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/w3images/steak.jpg" alt="" style="width:100%">
+                <h3>Title</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/w3images/cherries.jpg" alt="" style="width:100%">
+                <h3>Title</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                <p>What else?</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/w3images/wine.jpg" alt="" style="width:100%">
+                <h3>Title</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="/w3images/popsicle.jpg" alt="" style="width:100%">
+                <h3>Title</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/w3images/salmon.jpg" alt="" style="width:100%">
+                <h3>Title</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/w3images/sandwich.jpg" alt="" style="width:100%">
+                <h3>Title</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="/w3images/croissant.jpg" alt="" style="width:100%">
+                <h3>Title</h3>
+                <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Research on Shortages</title>
+            <link rel="stylesheet" href="blog.css">
+        </head>
+        
+        <body>
+            <header>
+                <div class="container">
+                    <h1>Research on Shortages</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#definition">Definition</a></li>
+                            <li><a href="#causes">Causes</a></li>
+                            <li><a href="#effects">Effects</a></li>
+                            <li><a href="#products">Products Affected</a></li>
+                            <li><a href="#impact">Impact on Patient Care</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                    <section id="definition">
+                        <h2>Definition</h2>
+                        <p>A shortage is defined by a period of time when a country’s demand for a device surpasses the supply.
+                            However, the FDA has acknowledged that there are circumstances of regional supply delays, even if
+                            the demand does not exceed the supply (FDA).</p>
+                    </section>
+        
+                    <section id="causes">
+                        <h2>Causes</h2>
+                        <h3>Legal</h3>
+                        <p>Laws, policy regulation Section 506J of the FD&C Act. On March 27, 2020, the CARES Act was enacted,
+                            adding Section 506J to the Federal Food, Drug, and Cosmetic Act (FD&C Act). This new section
+                            mandates that manufacturers inform the FDA about any permanent halt or significant interruption in
+                            the production of certain devices that could substantially impact the domestic supply.</p>
+                        <p>According to the law, the requirement for "506J notifications" is only in effect during or in
+                            anticipation of a declared public health emergency. Since the COVID-19 public health emergency ended
+                            on May 11, 2023, the FDA no longer expects manufacturers to submit these notifications for devices
+                            deemed critical during that period. However, the FDA accepts and encourages device manufacturers to
+                            voluntarily report any interruptions or discontinuances in manufacturing, even outside of declared
+                            public health emergencies, as this information is crucial for preventing and managing disruptions in
+                            the supply of essential devices (FDA).</p>
+        
+                        <h3>Management/Production</h3>
+                        <p>Cost cutting, manufacturing and quality problems, geopolitical issues.</p>
+        
+                        <h3>Emergency Preparedness</h3>
+                        <p>Natural disasters, delays, public health emergencies, and discontinuations (COVID). The recent
+                            shortages of small volume parenteral (SVP) IV fluids were driven by the manufacturing disruption
+                            from Hurricane Maria superimposed on reduced supply due to manufacturer quality issues. The reduced
+                            supply of SVP products, including normal saline, led to widespread disruption in the delivery of
+                            healthcare in the US and globally as these products are used for hydration and preparation of
+                            numerous additional widely used medications.</p>
+                        <p>Until 2017, all 0.9% Sodium Chloride IV bags, also known as Saline Bags, which are required for all
+                            patients admitted into the emergency rooms were produced in Puerto Rico. However, in 2014, the U.S.
+                            experienced a nationwide shortage of IV solutions, specifically saline large volume intravenous
+                            solutions. Manufacturers blamed supply disruptions on plant shutdowns for routine inspection and
+                            upgrades. The main manufacturer, Baxter International, went south.</p>
+                    </section>
+        
+                    <section id="effects">
+                        <h2>Effects</h2>
+                        <p>The shortage crisis has affected multiple countries, including Mexico, the United Kingdom, and rural
+                            areas of China and Australia. It has also impacted various products such as saline bags/infusion
+                            pumps.</p>
+                    </section>
+        
+                    <section id="products">
+                        <h2>Products Affected</h2>
+                        <h3>Saline Bags/Infusion Pumps</h3>
+                        <p>To help alleviate the 2014 shortage, the FDA announced that it was working with the three U.S.
+                            manufacturers, Baxter Healthcare, B. Braun Medical, and Hospira, to increase supply. The agency also
+                            approved Fresenius Kabi USA to temporarily import its European sodium chloride 0.9% Freeflex
+                            Injection Solution for Intravenous Infusion into the U.S. market in late 2014. Then, in May 2015,
+                            the FDA approved Baxter’s Sabinanigo, Spain facility as a manufacturing site for 0.9% sodium
+                            chloride injection, USP, for the U.S. market. Even with these interventions, the American Society of
+                            Health-System Pharmacists (ASHP) reported shortages of 0.9% sodium chloride irrigation and 0.45%
+                            sodium chloride injection bags throughout 2016 across multiple manufacturers, including B. Braun,
+                            Baxter, Hospira, and Pfizer.</p>
+        
+                        <h3>N95 Masks</h3>
+                        <p>When COVID-19 surged in 2020, the resulting shortage of N95 respirator face masks in the U.S.
+                            highlighted the complexities of global medical product supply chains, as well as the need for
+                            serious modifications to ensure public health and safety. The COVID-19 pandemic has disrupted supply
+                            chains, resulting in a critical shortage of high-demand PPE, including N95 respirators, worldwide.
+                            In many countries, healthcare workers have little choice but to use substandard PPE and respirators,
+                            even homemade ones. Similar situations have also occurred during past pandemics and epidemics.
+                            National, local, regional, and hospital administrative authorities should have the oversight to
+                            monitor the demand for PPE and prioritize the needs of the frontline healthcare workers who are at
+                            the highest risks of exposure to the virus.</p>
+                    </section>
+        
+                    <section id="impact">
+                        <h2>Impact on Patient Care</h2>
+                        <p>According to a survey, 60% of respondents reported shortages of more than 20 drugs, single-use
+                            supplies, or other medical devices in the six months leading up to the survey. The shortage crisis
+                            has permeated multiple medical specialties, with 74% of respondents citing compromised care in
+                            surgery and anesthetics, 64% in emergency care, 52% in pain management, 45% in cardiology, 44% in
+                            hematology and oncology, 39% in infectious diseases, and 37% in obstetrics and gynecology.</p>
+                        <p>Disruptions in the medical product supply chain have been an ongoing issue for decades. Although
+                            shortages of drugs and medical devices can be life-threatening for some individuals, they also have
+                            broader systemic impacts. These shortages put additional strain on manufacturers and suppliers to
+                            handle unexpected spikes in demand, ultimately affecting the entire U.S. healthcare system and
+                            resulting in costs amounting to millions of dollars annually (National Academies).</p>
+                    </section>
+                </div>
+            </main>
+            <footer>
+                <div class="container">
+                    <p>&copy; Wellness Without Boundaries. All rights reserved.</p>
+                </div>
+            </footer>
+        </body>
+        
+        </html>
