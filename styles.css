@@ -3,8 +3,123 @@ body, html {
   height: 100%;
   color: #6C7A86;
   line-height: 1.8;
-  
+  overflow: auto;
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+	--vs-primary: 29 92 255;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/*Dialog Styles*/
+/*Dialog Styles*/
+dialog, dialoga, dialogb {
+    padding: 1.5rem 4rem; /* Increase padding for more space inside the dialog */
+    background-color: #0000006f;
+    width: 100%;
+    max-width: 800px; /* Increase the max-width to make the dialog box larger */
+    padding-top: 2rem;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+    animation: fadeIn 1s ease both;
+    &::backdrop {
+        animation: fadeIn 1s ease both;
+        background: rgb(255 255 255 / 40%);
+        z-index: 2r(20px);
+    }
+
+    .x {
+        filter: grayscale(1);
+        border: none;
+        background: none;
+        position: absolute;
+        top: 15px;
+        right: 15px; /* Adjust position if needed */
+        transition: ease filter, transform 0.3s;
+        cursor: pointer;
+        transform-origin: center;
+        &:hover {
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+    }
+    h2 {
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 2.5rem; /* Increase font size if needed */
+        padding-bottom: 1rem;
+    }
+    h3{
+      font-weight: 600;
+      color: #fafdff;
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+    }
+    p {
+        font-size: 1.2rem; /* Increase font size for better readability */
+        color: #c0d6e2;
+        line-height: 1.5rem; /* Adjust line-height if necessary */
+        padding: 0.5rem 0;
+        a {
+            &:visited {
+                color: rgb(var(--vs-primary));
+            }
+        }
+    }
+}
+
+
+/*General Styles*/
+
+button.primary {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 1em 2em;
+    color: #ffffff !important;
+    background: #908080; /* Updated background color */
+    padding: 13px 25px;
+    border-radius: 30px; /* Updated border-radius */
+    transition: background-color 0.1s ease;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -10px rgba(102, 102, 102, 0.5); /* Fixed box-shadow with rgba */
+}
+
+button.primary:hover {
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.5); /* Fixed hover shadow with rgba */
+    transform: translateY(-5px);
+}
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
@@ -58,6 +173,19 @@ header {
                 position: relative;/* Adjust padding for smaller screens */
             }
         }
+
+  .w3-row {
+    display: flex;
+    justify-content: space-around; /* Evenly spaces the items with space around them */
+    align-items: center; /* Vertically centers items */
+    padding: 1em; /* Add padding for spacing */
+}
+
+.w3-quarter {
+    flex: 1; /* Allows each item to take up equal space */
+    margin: 0 1em; /* Add margin between items for better spacing */
+    text-align: center; /* Center-aligns the text and buttons */
+}
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;

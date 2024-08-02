@@ -60,7 +60,7 @@
             <div class="w3-row">
                 <div class="w3-col m6 w3-center w3-padding-large">
                     <p><b><i class="fa fa-user w3-margin-right"></i>Wellness Without Boundaries</b></p><br>
-                    <img src="updated logo.png" class="w3-round w3-image w3-opacity"
+                    <img src="updated logo.png" class="w3-round w3-image"
                         alt="Logo" width="500" height="333">
                 </div>
         
@@ -89,27 +89,108 @@
             <span class="w3-xxlarge w3-text-white w3-wide">What is healthcare inequality?</span>
         </div>
     </div>
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">71%</span><br>
-            As of october 2023, 71% of healthcare executives have stated that they are dealing with distribution delays in
-            their supply chains.
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">Major drug shortages</span><br>
-            There has been a huge halt on different drugs, medical supplies for cancer such as chemotherapy.
+    
+<div class="w3-row w3-center w3-dark-grey w3-padding">
+    <div class="w3-quarter w3-section">
+        <!-- Button 1 -->
+        <button class="primary" onclick="document.getElementById('dialog').showModal();">Causes</button>
+
+        <dialog id="dialog">
+            <h2>Definition</h2>
+            <p>A shortage is defined by a period of time when a country’s demand for a device surpasses the supply.
+                However, the FDA has acknowledged that there are circumstances of regional supply delays, even if
+                the demand does not exceed the supply (FDA).</p>
+            <section id="causes">
+                <h3>Legal</h3>
+                <p>Laws, policy regulation Section 506J of the FD&C Act. On March 27, 2020, the CARES Act was enacted,
+                    adding Section 506J to the Federal Food, Drug, and Cosmetic Act (FD&C Act). This new section
+                    mandates that manufacturers inform the FDA about any permanent halt or significant interruption in
+                    the production of certain devices that could substantially impact the domestic supply.</p>
+                <p>According to the law, the requirement for "506J notifications" is only in effect during or in
+                    anticipation of a declared public health emergency. Since the COVID-19 public health emergency ended
+                    on May 11, 2023, the FDA no longer expects manufacturers to submit these notifications for devices
+                    deemed critical during that period. However, the FDA accepts and encourages device manufacturers to
+                    voluntarily report any interruptions or discontinuances in manufacturing, even outside of declared
+                    public health emergencies, as this information is crucial for preventing and managing disruptions in
+                    the supply of essential devices (FDA).</p>
+                <h3>Management/Production</h3>
+                <p>Cost cutting, manufacturing and quality problems, geopolitical issues.</p>
             
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">Drug / Device Alternatives</span><br>
-           Due to this shortage it has caused for several hospitals to utilize “drug/device alternatives”
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">X</span><br>
-        Widespread labor shortages
-        </div>
+                <h3>Emergency Preparedness</h3>
+                <p>Natural disasters, delays, public health emergencies, and discontinuations (COVID). The recent
+                    shortages of small volume parenteral (SVP) IV fluids were driven by the manufacturing disruption
+                    from Hurricane Maria superimposed on reduced supply due to manufacturer quality issues. The reduced
+                    supply of SVP products, including normal saline, led to widespread disruption in the delivery of
+                    healthcare in the US and globally as these products are used for hydration and preparation of
+                    numerous additional widely used medications.</p>
+                <p>Until 2017, all 0.9% Sodium Chloride IV bags, also known as Saline Bags, which are required for all
+                    patients admitted into the emergency rooms were produced in Puerto Rico. However, in 2014, the U.S.
+                    experienced a nationwide shortage of IV solutions, specifically saline large volume intravenous
+                    solutions. Manufacturers blamed supply disruptions on plant shutdowns for routine inspection and
+                    upgrades. The main manufacturer, Baxter International, went south.</p>
+            </section>
+
+            <button onclick="document.getElementById('dialog').close();" aria-label="close" class="x">❌</button>
+        </dialog>
     </div>
+    <div class="w3-quarter w3-section w3-padding-64">
+        <!-- Button 2 -->
+        <button class="primary" onclick="document.getElementById('dialoga').showModal();">Effects</button>
+
+        <dialog id="dialoga">
+            <h2>Effects</h2>
+            <p>The shortage crisis has affected multiple countries, including Mexico, the United Kingdom, and rural
+                areas of China and Australia. It has also impacted various products such as saline bags/infusion
+                pumps.</p>
+            </section>
+            
+            <section id="products">
+                <h2>Products Affected</h2>
+                <h3>Saline Bags/Infusion Pumps</h3>
+                <p>To help alleviate the 2014 shortage, the FDA announced that it was working with the three U.S.
+                    manufacturers, Baxter Healthcare, B. Braun Medical, and Hospira, to increase supply. The agency also
+                    approved Fresenius Kabi USA to temporarily import its European sodium chloride 0.9% Freeflex
+                    Injection Solution for Intravenous Infusion into the U.S. market in late 2014. Then, in May 2015,
+                    the FDA approved Baxter’s Sabinanigo, Spain facility as a manufacturing site for 0.9% sodium
+                    chloride injection, USP, for the U.S. market. Even with these interventions, the American Society of
+                    Health-System Pharmacists (ASHP) reported shortages of 0.9% sodium chloride irrigation and 0.45%
+                    sodium chloride injection bags throughout 2016 across multiple manufacturers, including B. Braun,
+                    Baxter, Hospira, and Pfizer.</p>
+            
+                <h3>N95 Masks</h3>
+                <p>When COVID-19 surged in 2020, the resulting shortage of N95 respirator face masks in the U.S.
+                    highlighted the complexities of global medical product supply chains, as well as the need for
+                    serious modifications to ensure public health and safety. The COVID-19 pandemic has disrupted supply
+                    chains, resulting in a critical shortage of high-demand PPE, including N95 respirators, worldwide.
+                    In many countries, healthcare workers have little choice but to use substandard PPE and respirators,
+                    even homemade ones. Similar situations have also occurred during past pandemics and epidemics.
+                    National, local, regional, and hospital administrative authorities should have the oversight to
+                    monitor the demand for PPE and prioritize the needs of the frontline healthcare workers who are at
+                    the highest risks of exposure to the virus.</p>
+            <button onclick="document.getElementById('dialoga').close();" aria-label="close" class="x">❌</button>
+        </dialog>
     </div>
+    <div class="w3-quarter w3-section">
+        <!-- Button 3 -->
+        <button class="primary" onclick="document.getElementById('dialogb').showModal();">Impact</button>
+
+        <dialog id="dialogb">
+            <h2>Impact on Patient Care</h2>
+            <p>According to a survey, 60% of respondents reported shortages of more than 20 drugs, single-use
+                supplies, or other medical devices in the six months leading up to the survey. The shortage crisis
+                has permeated multiple medical specialties, with 74% of respondents citing compromised care in
+                surgery and anesthetics, 64% in emergency care, 52% in pain management, 45% in cardiology, 44% in
+                hematology and oncology, 39% in infectious diseases, and 37% in obstetrics and gynecology.</p>
+            <p>Disruptions in the medical product supply chain have been an ongoing issue for decades. Although
+                shortages of drugs and medical devices can be life-threatening for some individuals, they also have
+                broader systemic impacts. These shortages put additional strain on manufacturers and suppliers to
+                handle unexpected spikes in demand, ultimately affecting the entire U.S. healthcare system and
+                resulting in costs amounting to millions of dollars annually (National Academies).</p>
+            <button onclick="document.getElementById('dialogb').close();" aria-label="close" class="x">❌</button>
+        </dialog>
+    </div>
+</div>
+</body>
 
 
     <!-- Container (Contact Section) -->
@@ -151,19 +232,11 @@
             </div>
         </div>
     </div>
-
-        <!-- Pagination -->
-        <div class="w3-center w3-padding-32">
-            <div class="w3-bar">
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-            </div>
-            </div>
-        </div>
+<link rel="stylesheet" type="text/css" href="https://donorbox.org/animate-popup-donate-button.css">
+<script type="text/javascript" id="donorbox-donate-button-installer" src="https://donorbox.org/install-donate-button.js"
+    data-href="https://donorbox.org/wellness-without-boundaries?default_interval=m"
+    data-style="background: rgb(108, 122, 134); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 22px 8px 18px; border-radius: 5px 5px 0px 0px; gap: 8px; width: fit-content; line-height: 24px; position: fixed; top: 50%; transform-origin: center center; z-index: 9999; overflow: hidden; right: 20px; transform: translate(50%, -50%) rotate(-90deg);"
+    data-button-cta="Donate" data-img-src="https://donorbox.org/images/white_logo.svg"></script>
     <!-- Footer -->
 <footer-flex>
     
