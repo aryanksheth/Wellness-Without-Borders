@@ -1,274 +1,170 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
+  font-family: "Lato", sans-serif;
   height: 100%;
   color: #6C7A86;
   line-height: 1.8;
   overflow-x: hidden;
   overflow-y: auto;
-}
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-:root {
-	--vs-primary: 29 92 255;
+  background-color: #212121;
 }
 
+:root {
+  --vs-primary: 29 92 255;
+}
+
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 10px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
-/*Dialog Styles*/
-/*Dialog Styles*/
+
+/* Dialog Styles */
 dialog, dialoga, dialogb {
-    padding: 1.5rem 4rem; /* Increase padding for more space inside the dialog */
-    background-color: #0000006f;
-    width: 100%;
-    max-width: 800px; /* Increase the max-width to make the dialog box larger */
-    padding-top: 2rem;
-    border-radius: 20px;
-    border: 0;
-    box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
-    animation: fadeIn 1s ease both;
-    &::backdrop {
-        animation: fadeIn 1s ease both;
-        background: rgb(255 255 255 / 40%);
-        z-index: 2r(20px);
-    }
-
-    .x {
-        filter: grayscale(1);
-        border: none;
-        background: none;
-        position: absolute;
-        top: 15px;
-        right: 15px; /* Adjust position if needed */
-        transition: ease filter, transform 0.3s;
-        cursor: pointer;
-        transform-origin: center;
-        &:hover {
-            filter: grayscale(0);
-            transform: scale(1.1);
-        }
-    }
-    h2 {
-        font-weight: 600;
-        color: #ffffff;
-        font-size: 2.5rem; /* Increase font size if needed */
-        padding-bottom: 1rem;
-    }
-    h3{
-      font-weight: 600;
-      color: #fafdff;
-      font-size: 2.5rem;
-      padding-bottom: 1rem;
-    }
-    p {
-        font-size: 1.2rem; /* Increase font size for better readability */
-        color: #c0d6e2;
-        line-height: 1.5rem; /* Adjust line-height if necessary */
-        padding: 0.5rem 0;
-        a {
-            &:visited {
-                color: rgb(var(--vs-primary));
-            }
-        }
-    }
+  padding: 1.5rem 4rem;
+  background-color: #0000006f;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+  animation: fadeIn 1s ease both;
+}
+dialog::backdrop {
+  animation: fadeIn 1s ease both;
+  background: rgb(255 255 255 / 40%);
+  z-index: 20;
+}
+.dialog .x {
+  filter: grayscale(1);
+  border: none;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: filter 0.3s, transform 0.3s;
+  cursor: pointer;
+  transform-origin: center;
+}
+.dialog .x:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+dialog h2, dialog h3 {
+  font-weight: 600;
+  color: #ffffff;
+}
+dialog h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+dialog h3 {
+  font-size: 2.5rem;
+  color: #fafdff;
+  padding-bottom: 1rem;
+}
+dialog p {
+  font-size: 1.2rem;
+  color: #c0d6e2;
+  line-height: 1.5rem;
+  padding: 0.5rem 0;
+}
+dialog a:visited {
+  color: rgb(var(--vs-primary));
 }
 
-
-/*General Styles*/
-
+/* General Styles */
 button.primary {
-    display: inline-block;
-    font-size: 1.25rem;
-    padding: 1em 2em;
-    color: #ffffff !important;
-    background: #908080; /* Updated background color */
-    padding: 13px 25px;
-    border-radius: 30px; /* Updated border-radius */
-    transition: background-color 0.1s ease;
-    box-sizing: border-box;
-    transition: all 0.25s ease;
-    border: 0;
-    cursor: pointer;
-    box-shadow: 0 10px 20px -10px rgba(102, 102, 102, 0.5); /* Fixed box-shadow with rgba */
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 1em 2em;
+  color: #ffffff !important;
+  background: #908080;
+  border-radius: 30px;
+  transition: background-color 0.1s ease, transform 0.25s ease;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -10px rgba(102, 102, 102, 0.5);
 }
-
 button.primary:hover {
-    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.5); /* Fixed hover shadow with rgba */
-    transform: translateY(-5px);
+  box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
 }
-
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
+/* Responsive Styles */
+.w3-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
 }
-body {
-  font-family: "Lato", sans-serif;
-  height: 100%;
-  color: #6C7A86;
-  line-height: 1.8;
-  background-color: #212121; 
-}
-.bodyR {
-  font-family: "Lato", sans-serif;
-  height: 100%;
-  color: #6C7A86;
-  line-height: 1.8;
-  text-align: left;
-  position-anchor: right;
-  background-color: #212121; 
-}
-header {
-    background-color: #6C7A86;
-    color: black;
-    padding: 1em;
-}
-.right-container {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            float: right;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            padding: 20px;
-            background-color: #212121;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            margin: 20px;
-            position: relative;
-             width: 100%;
-        }
-        .right-container img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        @media (max-width: 768px) {
-            .container {
-                position: relative;/* Adjust padding for smaller screens */
-            }
-        }
-
-  .w3-row {
-    display: flex;
-    justify-content: space-around; /* Evenly spaces the items with space around them */
-    align-items: center; /* Vertically centers items */
-    padding: 1em; /* Add padding for spacing */
-}
-
 .w3-quarter {
-    flex: 1; /* Allows each item to take up equal space */
-    margin: 0 1em; /* Add margin between items for better spacing */
-    text-align: center; /* Center-aligns the text and buttons */
+  flex: 1;
+  margin: 0 1em;
+  text-align: center;
 }
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* Style for larger screens */
-@media (min-width: 600px) {
-    .alternative-style {
-        display: none;
-    }
-}
-
-/* Style for smaller screens */
-@media (max-width: 599px) {
-    .w3-hide-small {
-        display: none;
-    }
-
-    .alternative-style {
-        display: block;
-        /* Add additional styles for small screens here */
-        background-color: #212121;
-        box-shadow: none;
-        padding: 20px;
-        text-align: center;
-    }
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('c.JPG');
-  min-height: 100%;
-}
-.bgimg-2{
-  background-image: url('national-cancer-institute-NFvdKIhxYlU-unsplash.jpg');
-  min-height: 100%;
-}
+.bgimg-1 { background-image: url('c.JPG'); }
+.bgimg-2 { background-image: url('national-cancer-institute-NFvdKIhxYlU-unsplash.jpg'); }
 
 .centered-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
-
 nav ul li {
-    display: inline;
-    margin-right: 1em;
+  display: inline;
+  margin-right: 1em;
 }
-
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 main {
-    padding: 2em;
+  padding: 2em;
 }
 
-.right-align{
+.right-align {
   float: right;
 }
 
 footer {
-    background-color: #333;
-    color: #6C7A86;
-    text-align: center;
-    padding: 1em;
-    position: flex;
+  background-color: #333;
+  color: #6C7A86;
+  text-align: center;
+  padding: 1em;
+  position: relative;
 }
 .footer-fixed {
   position: fixed;
   bottom: 0;
 }
-
 .footer-sticky {
   position: relative;
   bottom: 0;
@@ -294,14 +190,12 @@ footer {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #008CBA;
 }
-
 .container:hover .overlay {
   opacity: 1;
 }
-
 .text {
   color: white;
   font-size: 20px;
@@ -309,5 +203,4 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
