@@ -193,6 +193,29 @@ header {
   background-size: cover;
 }
 
+/* Style for larger screens */
+@media (min-width: 600px) {
+    .alternative-style {
+        display: none;
+    }
+}
+
+/* Style for smaller screens */
+@media (max-width: 599px) {
+    .w3-hide-small {
+        display: none;
+    }
+
+    .alternative-style {
+        display: block;
+        /* Add additional styles for small screens here */
+        background-color: #212121;
+        box-shadow: none;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url('c.JPG');
