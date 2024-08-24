@@ -32,7 +32,6 @@ body, html {
   background: #555; 
 }
 /*Dialog Styles*/
-/*Dialog Styles*/
 dialog, dialoga, dialogb {
     padding: 1.5rem 4rem; /* Increase padding for more space inside the dialog */
     background-color: #0000006f;
@@ -45,7 +44,7 @@ dialog, dialoga, dialogb {
     animation: fadeIn 1s ease both;
     &::backdrop {
         animation: fadeIn 1s ease both;
-        background: rgb(255 255 255 / 40%);
+        background: rgb(0 0 0 / 40%);
         z-index: 2r(20px);
     }
 
